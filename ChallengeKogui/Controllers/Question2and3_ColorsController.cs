@@ -27,6 +27,7 @@ namespace ChallengeKogui.Controllers
             _figureGenerator = new Question3_MatrixFigureGenerator();
         }
 
+        // Questão 2
         // Endpoint com a função de obter os nomes das cores via API e comparar com a lista.
         [HttpGet("Generate-Phrase")]
         public async Task<ActionResult> GeneratePhraseFromColors()
@@ -69,6 +70,7 @@ namespace ChallengeKogui.Controllers
             }
         }
 
+        // Questão 3
         // Endpoint com função específico de gerar a figura a partir da matriz.
         [HttpGet("Generate-Figure")]
         public ActionResult GenerateFigure()
